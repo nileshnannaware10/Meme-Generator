@@ -1,0 +1,225 @@
+/* General Styling */
+body {
+    font-family: 'Poppins', Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background: linear-gradient(120deg, #6a11cb 0%, #2575fc 100%);
+    color: #ffffff;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+header {
+    width: 100%;
+    padding: 1rem;
+    background-color: #333;
+    color: #fff;
+    text-align: center;
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.2);
+}
+
+header button {
+    margin-top: 10px;
+    padding: 0.5rem 1rem;
+    background: #ff8a65;
+    border: none;
+    border-radius: 20px;
+    color: #fff;
+    cursor: pointer;
+    transition: background-color 0.3s, transform 0.2s;
+}
+
+header button:hover {
+    background: #ff7043;
+    transform: scale(1.05);
+}
+
+/* Main Content */
+main {
+    width: 90%;
+    max-width: 900px;
+    margin: 1rem auto;
+    background: #444;
+    border-radius: 15px;
+    box-shadow: 0px 6px 10px rgba(0, 0, 0, 0.3);
+    padding: 20px;
+}
+
+#editor {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-bottom: 2rem;
+    background: #555;
+    border-radius: 10px;
+    padding: 20px;
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.2);
+}
+
+#canvasContainer {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    margin: 1rem 0;
+}
+
+canvas {
+    max-width: 100%;
+    border: 3px solid #ff8a65;
+    border-radius: 10px;
+    background-color: #000;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.3);
+}
+
+input[type="file"],
+input[type="text"],
+input[type="color"],
+button {
+    margin: 0.5rem 0;
+    padding: 0.5rem;
+    border-radius: 20px;
+    border: none;
+    outline: none;
+    font-size: 1rem;
+    color: #444;
+    background: #ffccbc;
+    box-shadow: 0px 3px 5px rgba(0, 0, 0, 0.2);
+    transition: all 0.3s;
+}
+
+button {
+    background: #ff8a65;
+    color: #fff;
+    cursor: pointer;
+}
+
+button:hover {
+    background: #ff7043;
+    transform: scale(1.05);
+    box-shadow: 0px 5px 8px rgba(0, 0, 0, 0.3);
+}
+
+#gallery {
+    margin-top: 2rem;
+}
+
+#galleryContent {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1rem;
+    justify-content: center;
+}
+
+#galleryContent img {
+    max-width: 100%;
+    border: 2px solid #ff8a65;
+    border-radius: 10px;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.3);
+    transition: transform 0.3s, box-shadow 0.3s;
+    cursor: pointer;
+}
+
+#galleryContent img:hover {
+    transform: scale(1.1);
+    box-shadow: 0px 6px 12px rgba(0, 0, 0, 0.4);
+}
+
+/* Responsive Design */
+@media (max-width: 600px) {
+    canvas {
+        width: 100%;
+        height: auto;
+    }
+
+    header h1 {
+        font-size: 1.5rem;
+    }
+
+    main {
+        padding: 10px;
+    }
+}
+
+/* Controls Section */
+#controls {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+    margin-bottom: 20px;
+    justify-content: center;
+}
+
+#controls input[type="file"],
+#controls input[type="text"],
+#controls input[type="color"],
+#controls button {
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 14px;
+}
+
+#controls button {
+    background-color: #4CAF50;
+    color: white;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+#controls button:hover {
+    background-color: #45a049;
+}
+
+/* Canvas Section */
+#canvas-container {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 20px;
+}
+
+#memeCanvas {
+    border: 2px solid #ccc;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+/* Gallery Section */
+#gallery {
+    text-align: center;
+}
+
+#gallery h2 {
+    font-size: 20px;
+    margin-bottom: 10px;
+}
+
+#galleryContent {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+    justify-content: center;
+}
+
+#galleryContent img {
+    max-width: 150px;
+    max-height: 150px;
+    border: 2px solid #ccc;
+    border-radius: 5px;
+    transition: transform 0.3s;
+}
+
+#galleryContent img:hover {
+    transform: scale(1.1);
+}
+
+/* Footer Section */
+footer {
+    background-color: #333;
+    color: white;
+    text-align: center;
+    padding: 10px 0;
+    position: relative;
+    bottom: 0;
+    width: 100%;
+}
