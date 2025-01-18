@@ -3,7 +3,7 @@
 ## Description
 A web-based meme generator that allows users to create custom memes by uploading images or using random templates. The project features text customization, color adjustments etc.
 
----
+
 
 ## Features
 
