@@ -11,7 +11,7 @@ A web-based meme generator that allows users to create custom memes by uploading
   - Add top and bottom text.
   - Adjust text and background colors.
   - **Draggable Text (Desktop Only)**: Users can drag and reposition the text anywhere on the meme for better placement.
-- **Download Meme**: Save your created meme to your device.
+  - **Download Meme**: Save your created meme to your device.
 
 ## Technologies Used
 
